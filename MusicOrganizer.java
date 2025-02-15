@@ -12,7 +12,11 @@ public class MusicOrganizer
     private ArrayList<String> files;
     // A player for the music files.
     private MusicPlayer player;
-        
+    /*21)Showed all the files created
+     *22)created a new object called arrayLis1
+     *23)repeat the private arraylist and musicplayer
+     *25)Added a list Matching
+     */    
     /**
      * Create a MusicOrganizer
      */
@@ -55,7 +59,7 @@ public class MusicOrganizer
     /**
      * Show a list of all the files in the collection.
      */
-    public void listAllFiles()
+     public void listAllFiles()
     {
         for(String filename : files) {
             System.out.println(filename);
@@ -131,4 +135,18 @@ public class MusicOrganizer
         }
         return valid;
     }
+    /**
+     * List the names of files matching the given search string
+     * @patam searchString the string to match
+     */
+    public void listMatching(String searchString)
+    {
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                // A match.
+                System.out.println(filename);
+            }
+        }
+    }
 }
+

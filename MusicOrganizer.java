@@ -16,6 +16,7 @@ public class MusicOrganizer
      *22)created a new object called arrayLis1
      *23)repeat the private arraylist and musicplayer
      *25)Added a list Matching
+     *26)added a else statement to listMatching
      */    
     /**
      * Create a MusicOrganizer
@@ -146,7 +147,20 @@ public class MusicOrganizer
                 // A match.
                 System.out.println(filename);
             }
+            else{
+               System.out.println("filename not found");
+            }
         }
     }
+    
+    /*28)public void ArrayList<Track> track;
+     *     for(String trackname : track){
+     *         
+         }
+     */
+    /*30)public int mutipleOfFive(int 1)
+     *      while(int<=19)
+     *          print(5*int)
+     */
 }
 
